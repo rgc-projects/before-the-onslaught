@@ -1,0 +1,103 @@
+{
+  "kingdoms": [
+    {
+      "id": "iron",
+      "name": "钢铁王国",
+      "tagline": "让前线工事承受下一轮冲击。",
+      "trait": "repair",
+      "power": 8,
+      "signature": "forge-seal",
+      "description": "开战前每座铁木栅墙恢复最多 8 点耐久。步兵在栅墙 2.1 格内架盾，增加护甲并反击近战。独有军令「铸炉密令」可低价升级一座建筑。"
+    },
+    {
+      "id": "arcane",
+      "name": "奥术王国",
+      "tagline": "用魔力和塔位交换范围火力。",
+      "trait": "arcane",
+      "power": 2,
+      "signature": "star-mason",
+      "description": "法师塔和魔法塔伤害提高 2 点。独有法术「星纹修补」恢复 12 点城堡生命。"
+    },
+    {
+      "id": "wild",
+      "name": "自然王国",
+      "tagline": "先组织补给，再维持庞大军队。",
+      "trait": "farm",
+      "power": 2,
+      "signature": "wild-grove",
+      "description": "每座农圃额外产出 2 食物。独有军令「森庭育苗」消耗食物建造农圃。"
+    },
+    {
+      "id": "war",
+      "name": "战争王国",
+      "tagline": "用高机动的骑兵快速封住缺口。",
+      "trait": "cavalry",
+      "power": 1,
+      "signature": "swift-company",
+      "description": "骑兵营多一个召集名额，骑兵每波少用 1 食物，冲锋额外伤及目标和附近敌军。独有军令「赤旗快骑」可低价招募骑兵。"
+    },
+    {
+      "id": "tide",
+      "name": "潮汐王国",
+      "tagline": "以射手和交叉火力控制渡口。",
+      "trait": "marksman",
+      "power": 1,
+      "signature": "silver-feather",
+      "description": "雾林弓手的远射伤害提高 1 点。独有军令「银羽游骑」可以低价招募弓手。"
+    }
+  ],
+  "rampartGuard": { "units": ["guard", "spear", "sentinel", "waykeeper"], "distance": 2.1, "armor": 2, "damage": 4, "interval": 8 },
+  "cards": [
+    {
+      "id": "forge-seal",
+      "name": "铸炉密令",
+      "kind": "fortify",
+      "ref": "",
+      "cost": {
+        "gold": 1,
+        "wood": 1
+      },
+      "description": "选择一座一级建筑，使其升至二级。只支付卡面费用。"
+    },
+    {
+      "id": "star-mason",
+      "name": "星纹修补",
+      "kind": "spell",
+      "ref": "",
+      "cost": {
+        "mana": 2
+      },
+      "heal": 12,
+      "description": "备战时修复城堡 12 点生命。"
+    },
+    {
+      "id": "wild-grove",
+      "name": "森庭育苗",
+      "kind": "building",
+      "ref": "farm",
+      "cost": {
+        "food": 2
+      },
+      "description": "以食物建造农圃，开战前生产金币和食物。河岸与王国能力可以叠加。"
+    },
+    {
+      "id": "swift-company",
+      "name": "赤旗快骑",
+      "kind": "unit",
+      "ref": "lancer",
+      "cost": {
+        "gold": 3,
+        "food": 1
+      },
+      "description": "快速招募骑兵，仍需为部队准备每波军粮。"
+    },
+    {
+      "id": "silver-feather",
+      "name": "银羽游骑",
+      "kind": "unit",
+      "ref": "archer",
+      "cost": { "gold": 2, "food": 1 },
+      "description": "招募一支雾林弓手。参战需要 1 食物。"
+    }
+  ]
+}

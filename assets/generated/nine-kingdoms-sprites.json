@@ -1,0 +1,477 @@
+{
+  "cell": 96,
+  "columns": 6,
+  "rows": 8,
+  "sprites": {
+    "watch": {
+      "column": 0,
+      "row": 0,
+      "frame": [
+        22,
+        6,
+        52,
+        84
+      ]
+    },
+    "farm": {
+      "column": 1,
+      "row": 0,
+      "frame": [
+        101,
+        29,
+        86,
+        61
+      ]
+    },
+    "wall": {
+      "column": 2,
+      "row": 0,
+      "frame": [
+        197,
+        39,
+        86,
+        51
+      ]
+    },
+    "keep": {
+      "column": 3,
+      "row": 0,
+      "frame": [
+        294,
+        6,
+        84,
+        84
+      ]
+    },
+    "mine": {
+      "column": 4,
+      "row": 0,
+      "frame": [
+        389,
+        20,
+        86,
+        70
+      ]
+    },
+    "market": {
+      "column": 5,
+      "row": 0,
+      "frame": [
+        485,
+        27,
+        86,
+        63
+      ]
+    },
+    "storehouse": {
+      "column": 0,
+      "row": 1,
+      "frame": [
+        5,
+        125,
+        86,
+        61
+      ]
+    },
+    "barracks": {
+      "column": 1,
+      "row": 1,
+      "frame": [
+        101,
+        117,
+        86,
+        69
+      ]
+    },
+    "stable": {
+      "column": 2,
+      "row": 1,
+      "frame": [
+        197,
+        126,
+        86,
+        60
+      ]
+    },
+    "bowcamp": {
+      "column": 3,
+      "row": 1,
+      "frame": [
+        293,
+        117,
+        86,
+        69
+      ]
+    },
+    "magetower": {
+      "column": 4,
+      "row": 1,
+      "frame": [
+        409,
+        102,
+        46,
+        84
+      ]
+    },
+    "arcanetower": {
+      "column": 5,
+      "row": 1,
+      "frame": [
+        493,
+        102,
+        69,
+        84
+      ]
+    },
+    "bombard": {
+      "column": 0,
+      "row": 2,
+      "frame": [
+        7,
+        198,
+        81,
+        84
+      ]
+    },
+    "shrine": {
+      "column": 1,
+      "row": 2,
+      "frame": [
+        102,
+        198,
+        84,
+        84
+      ]
+    },
+    "lab": {
+      "column": 2,
+      "row": 2,
+      "frame": [
+        197,
+        198,
+        86,
+        84
+      ]
+    },
+    "hall": {
+      "column": 3,
+      "row": 2,
+      "frame": [
+        293,
+        203,
+        86,
+        79
+      ]
+    },
+    "guard": {
+      "column": 4,
+      "row": 2,
+      "frame": [
+        392,
+        198,
+        79,
+        84
+      ]
+    },
+    "spear": {
+      "column": 5,
+      "row": 2,
+      "frame": [
+        505,
+        198,
+        45,
+        84
+      ]
+    },
+    "archer": {
+      "column": 0,
+      "row": 3,
+      "frame": [
+        5,
+        294,
+        85,
+        84
+      ]
+    },
+    "lancer": {
+      "column": 1,
+      "row": 3,
+      "frame": [
+        113,
+        294,
+        62,
+        84
+      ]
+    },
+    "mage": {
+      "column": 2,
+      "row": 3,
+      "frame": [
+        206,
+        294,
+        67,
+        84
+      ]
+    },
+    "sentinel": {
+      "column": 3,
+      "row": 3,
+      "frame": [
+        298,
+        294,
+        76,
+        84
+      ]
+    },
+    "stalker": {
+      "column": 4,
+      "row": 3,
+      "frame": [
+        389,
+        299,
+        86,
+        79
+      ]
+    },
+    "colossus": {
+      "column": 5,
+      "row": 3,
+      "frame": [
+        485,
+        302,
+        86,
+        76
+      ]
+    },
+    "medic": {
+      "column": 0,
+      "row": 4,
+      "frame": [
+        15,
+        390,
+        66,
+        84
+      ]
+    },
+    "summoner": {
+      "column": 1,
+      "row": 4,
+      "frame": [
+        110,
+        390,
+        68,
+        84
+      ]
+    },
+    "drake": {
+      "column": 2,
+      "row": 4,
+      "frame": [
+        197,
+        403,
+        86,
+        71
+      ]
+    },
+    "waykeeper": {
+      "column": 3,
+      "row": 4,
+      "frame": [
+        293,
+        401,
+        86,
+        73
+      ]
+    },
+    "raider": {
+      "column": 4,
+      "row": 4,
+      "frame": [
+        389,
+        406,
+        86,
+        68
+      ]
+    },
+    "breaker": {
+      "column": 5,
+      "row": 4,
+      "frame": [
+        486,
+        390,
+        84,
+        84
+      ]
+    },
+    "skirmisher": {
+      "column": 0,
+      "row": 5,
+      "frame": [
+        6,
+        486,
+        83,
+        84
+      ]
+    },
+    "rider": {
+      "column": 1,
+      "row": 5,
+      "frame": [
+        101,
+        487,
+        86,
+        83
+      ]
+    },
+    "hexer": {
+      "column": 2,
+      "row": 5,
+      "frame": [
+        205,
+        486,
+        70,
+        84
+      ]
+    },
+    "ogre": {
+      "column": 3,
+      "row": 5,
+      "frame": [
+        294,
+        486,
+        83,
+        84
+      ]
+    },
+    "captain": {
+      "column": 4,
+      "row": 5,
+      "frame": [
+        393,
+        486,
+        77,
+        84
+      ]
+    },
+    "marshal": {
+      "column": 5,
+      "row": 5,
+      "frame": [
+        485,
+        492,
+        86,
+        78
+      ]
+    },
+    "altar": {
+      "column": 0,
+      "row": 6,
+      "frame": [
+        5,
+        619,
+        86,
+        47
+      ]
+    },
+    "ember": {
+      "column": 1,
+      "row": 6,
+      "frame": [
+        110,
+        582,
+        68,
+        84
+      ]
+    },
+    "timber": {
+      "column": 2,
+      "row": 6,
+      "frame": [
+        197,
+        603,
+        86,
+        63
+      ]
+    },
+    "trade": {
+      "column": 3,
+      "row": 6,
+      "frame": [
+        294,
+        582,
+        84,
+        84
+      ]
+    },
+    "rations": {
+      "column": 4,
+      "row": 6,
+      "frame": [
+        389,
+        605,
+        86,
+        61
+      ]
+    },
+    "forge-seal": {
+      "column": 5,
+      "row": 6,
+      "frame": [
+        485,
+        589,
+        86,
+        77
+      ]
+    },
+    "star-mason": {
+      "column": 0,
+      "row": 7,
+      "frame": [
+        16,
+        678,
+        64,
+        84
+      ]
+    },
+    "timber-plus": {
+      "column": 1,
+      "row": 7,
+      "frame": [
+        101,
+        685,
+        86,
+        77
+      ]
+    },
+    "trade-plus": {
+      "column": 2,
+      "row": 7,
+      "frame": [
+        197,
+        695,
+        86,
+        67
+      ]
+    },
+    "rations-plus": {
+      "column": 3,
+      "row": 7,
+      "frame": [
+        293,
+        682,
+        86,
+        80
+      ]
+    },
+    "archive-cache": {
+      "column": 4,
+      "row": 7,
+      "frame": [
+        389,
+        678,
+        85,
+        84
+      ]
+    }
+  }
+}

@@ -1,0 +1,31 @@
+.env
+.env.*
+!.env.example
+*.key
+*.pem
+*.p12
+*.pfx
+project.private.config.json
+node_modules/
+.npm-cache/
+dist/
+build/
+coverage/
+test-results/
+playwright/.cache/
+playwright-report/
+__pycache__/
+*.py[cod]
+.godot/
+# Unity generated directories
+/Library/
+/Temp/
+/Obj/
+/Logs/
+/UserSettings/
+# Cocos generated directories
+/library/
+/temp/
+/local/
+Thumbs.db
+.DS_Store

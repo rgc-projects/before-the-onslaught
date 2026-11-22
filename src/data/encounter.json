@@ -1,0 +1,42 @@
+{
+  "map": {
+    "width": 11, "height": 7, "entry": { "x": 0, "y": 3 }, "keep": { "x": 9, "y": 3 },
+    "riverX": 3, "bridges": [2, 4],
+    "rocks": [{ "x": 0, "y": 0 }, { "x": 1, "y": 0 }, { "x": 0, "y": 6 }, { "x": 10, "y": 0 }, { "x": 10, "y": 6 }],
+    "start": { "gold": 11, "food": 3, "wood": 7, "mana": 2 },
+    "capacity": { "gold": 25, "food": 15, "wood": 18, "mana": 10 },
+    "keepHp": 30
+  },
+  "buildings": [
+    { "id": "watch", "name": "松岗箭塔", "hp": 15, "damage": 4, "reach": 3.15, "interval": 7, "block": true, "income": {} },
+    { "id": "farm", "name": "河畔农圃", "hp": 10, "damage": 0, "reach": 0, "interval": 1, "block": true, "income": { "food": 2, "gold": 2 } },
+    { "id": "wall", "name": "铁木栅墙", "hp": 24, "damage": 0, "reach": 0, "interval": 1, "block": true, "income": {} }
+  ],
+  "units": [
+    { "id": "guard", "name": "边境卫士", "hp": 21, "damage": 4, "reach": 1.18, "interval": 6, "speed": 2.1, "armor": 1 }
+  ],
+  "enemies": [
+    { "id": "raider", "name": "灰旗劫掠者", "hp": 12, "damage": 3, "reach": 1.18, "interval": 8, "speed": 1.6, "armor": 0 },
+    { "id": "breaker", "name": "破阵重卫", "hp": 23, "damage": 5, "reach": 1.18, "interval": 10, "speed": 1.15, "armor": 1 }
+  ],
+  "cards": [
+    { "id": "watch", "name": "松岗箭塔", "kind": "building", "ref": "watch", "cost": { "gold": 3, "wood": 2 }, "description": "远程射击。两座箭塔的射程交叠可集中火力。" },
+    { "id": "farm", "name": "河畔农圃", "kind": "building", "ref": "farm", "cost": { "gold": 2 }, "description": "下一波开始时产出 2 金币和 2 食物，紧邻水域额外产出 1 食物。" },
+    { "id": "wall", "name": "铁木栅墙", "kind": "building", "ref": "wall", "cost": { "wood": 2 }, "description": "阻挡敌军。路被完全封住时，敌军会尝试破坏挡路建筑。" },
+    { "id": "guard", "name": "边境卫士", "kind": "unit", "ref": "guard", "cost": { "gold": 2, "food": 2 }, "description": "在选定的格子集结，迎击最近的敌军。每波重新集结。" },
+    { "id": "ember", "name": "余烬印记", "kind": "spell", "ref": "", "cost": { "mana": 2 }, "description": "备战时修复城堡 8 点生命，也可以留到下一波。", "heal": 8 },
+    { "id": "timber", "name": "林地供给", "kind": "tactic", "ref": "", "cost": { "gold": 1 }, "gain": { "wood": 2 }, "description": "支付 1 金币运输 2 木材。用后进入弃牌堆。" },
+    { "id": "trade", "name": "渡口贸易", "kind": "tactic", "ref": "", "cost": { "food": 2 }, "gain": { "gold": 2 }, "description": "交付 2 食物换取 2 金币。用后进入弃牌堆。" },
+    { "id": "rations", "name": "炉边口粮", "kind": "tactic", "ref": "", "cost": { "mana": 1 }, "gain": { "food": 3 }, "description": "消耗 1 魔力补给 3 食物。用后进入弃牌堆。" }
+  ],
+  "starter": ["watch", "watch", "farm", "wall", "guard", "ember"],
+  "starterDeck": ["timber", "trade", "rations"],
+  "rewardPool": ["watch", "watch", "guard", "wall", "farm", "ember"],
+  "waves": [
+    { "name": "灰旗斥候", "groups": [{ "enemy": "raider", "count": 5, "gap": 9 }] },
+    { "name": "重卫突袭", "groups": [{ "enemy": "raider", "count": 6, "gap": 9 }, { "enemy": "breaker", "count": 3, "gap": 13 }] },
+    { "name": "鸦渡围城", "groups": [{ "enemy": "breaker", "count": 3, "gap": 17 }, { "enemy": "raider", "count": 7, "gap": 11 }, { "enemy": "breaker", "count": 3, "gap": 15 }] }
+  ],
+  "rewardIncome": { "gold": 4, "food": 2, "wood": 3, "mana": 1 },
+  "battleLimitTicks": 1000
+}

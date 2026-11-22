@@ -1,0 +1,11 @@
+{
+  "cellWidth": 64,
+  "cellHeight": 54,
+  "baseline": 50,
+  "walkFrames": 6,
+  "actionFrames": 2,
+  "rows": {
+    "archer": 0,
+    "lancer": 1
+  }
+}

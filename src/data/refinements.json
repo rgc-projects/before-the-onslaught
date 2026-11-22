@@ -1,0 +1,47 @@
+[
+  {
+    "id": "timber-plus",
+    "name": "整编林运",
+    "kind": "tactic",
+    "ref": "",
+    "rarity": "rare",
+    "cost": {
+      "gold": 1
+    },
+    "gain": {
+      "wood": 4
+    },
+    "description": "支付 1 金币运输 4 木材。使用后进入弃牌堆。",
+    "upgradesFrom": "timber"
+  },
+  {
+    "id": "trade-plus",
+    "name": "跨岸商约",
+    "kind": "tactic",
+    "ref": "",
+    "rarity": "rare",
+    "cost": {
+      "food": 2
+    },
+    "gain": {
+      "gold": 4
+    },
+    "description": "交付 2 食物换取 4 金币。使用后进入弃牌堆。",
+    "upgradesFrom": "trade"
+  },
+  {
+    "id": "rations-plus",
+    "name": "随军炉粮",
+    "kind": "tactic",
+    "ref": "",
+    "rarity": "rare",
+    "cost": {
+      "mana": 1
+    },
+    "gain": {
+      "food": 5
+    },
+    "description": "消耗 1 魔力补给 5 食物。使用后进入弃牌堆。",
+    "upgradesFrom": "rations"
+  }
+]

@@ -1,0 +1,941 @@
+{
+  "legacyBuildings": [
+    {
+      "id": "watch",
+      "art": "tower",
+      "upgrade": {
+        "cost": {
+          "gold": 4,
+          "wood": 2
+        },
+        "hp": 7,
+        "damage": 2,
+        "reach": 0.4
+      }
+    },
+    {
+      "id": "farm",
+      "art": "field",
+      "upgrade": {
+        "cost": {
+          "gold": 3,
+          "wood": 1
+        },
+        "hp": 5,
+        "income": {
+          "food": 2
+        }
+      }
+    },
+    {
+      "id": "wall",
+      "art": "wall",
+      "upgrade": {
+        "cost": {
+          "wood": 3
+        },
+        "hp": 16
+      }
+    }
+  ],
+  "buildings": [
+    {
+      "id": "mine",
+      "name": "岩脊金矿",
+      "art": "mine",
+      "hp": 14,
+      "income": {
+        "gold": 3
+      },
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 4,
+          "wood": 2
+        },
+        "hp": 6,
+        "income": {
+          "gold": 2
+        }
+      }
+    },
+    {
+      "id": "market",
+      "name": "桥市商栈",
+      "art": "hall",
+      "hp": 14,
+      "income": {
+        "gold": 1
+      },
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 5,
+          "wood": 2
+        },
+        "hp": 6,
+        "effect": 1
+      },
+      "effect": "market"
+    },
+    {
+      "id": "storehouse",
+      "name": "双仓粮栈",
+      "art": "hall",
+      "hp": 19,
+      "income": {},
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 4,
+          "wood": 3
+        },
+        "hp": 8,
+        "capacity": {
+          "gold": 3,
+          "food": 4,
+          "wood": 3,
+          "mana": 2
+        }
+      },
+      "width": 2,
+      "capacity": {
+        "gold": 8,
+        "food": 7,
+        "wood": 7,
+        "mana": 4
+      }
+    },
+    {
+      "id": "barracks",
+      "name": "鸢尾兵营",
+      "art": "hall",
+      "hp": 18,
+      "income": {},
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 4,
+          "food": 2
+        },
+        "hp": 7,
+        "recruits": 1
+      },
+      "recruits": "spear"
+    },
+    {
+      "id": "stable",
+      "name": "赤鬃骑营",
+      "art": "hall",
+      "hp": 17,
+      "income": {},
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 5,
+          "food": 3
+        },
+        "hp": 7,
+        "recruits": 1
+      },
+      "recruits": "lancer"
+    },
+    {
+      "id": "bowcamp",
+      "name": "雾林弓营",
+      "art": "hall",
+      "hp": 15,
+      "income": {},
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 4,
+          "food": 2
+        },
+        "hp": 6,
+        "recruits": 1
+      },
+      "recruits": "archer"
+    },
+    {
+      "id": "magetower",
+      "name": "流火法师塔",
+      "art": "arcane",
+      "hp": 14,
+      "income": {},
+      "damage": 4,
+      "reach": 3.4,
+      "interval": 5,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 4,
+          "mana": 3
+        },
+        "hp": 6,
+        "damage": 2,
+        "reach": 0.5
+      }
+    },
+    {
+      "id": "arcanetower",
+      "name": "裂光魔法塔",
+      "art": "arcane",
+      "hp": 13,
+      "income": {},
+      "damage": 5,
+      "reach": 3,
+      "interval": 10,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 5,
+          "mana": 3
+        },
+        "hp": 6,
+        "damage": 2,
+        "reach": 0.4
+      },
+      "splash": 1.15
+    },
+    {
+      "id": "bombard",
+      "name": "铜脊炮塔",
+      "art": "tower",
+      "hp": 20,
+      "income": {},
+      "damage": 12,
+      "reach": 3.7,
+      "interval": 15,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 6,
+          "wood": 3
+        },
+        "hp": 8,
+        "damage": 4,
+        "reach": 0.45
+      }
+    },
+    {
+      "id": "shrine",
+      "name": "晨钟神殿",
+      "art": "arcane",
+      "hp": 17,
+      "income": {},
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 5,
+          "mana": 2
+        },
+        "hp": 8,
+        "effect": 4
+      },
+      "effect": "blessing"
+    },
+    {
+      "id": "lab",
+      "name": "天衡研究所",
+      "art": "hall",
+      "hp": 16,
+      "income": {},
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 4,
+          "mana": 2
+        },
+        "hp": 6,
+        "effect": 1
+      },
+      "effect": "research"
+    },
+    {
+      "id": "hall",
+      "name": "誓盾英雄厅",
+      "art": "hall",
+      "hp": 23,
+      "income": {},
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 6,
+          "food": 3
+        },
+        "hp": 9
+      },
+      "recruits": "waykeeper"
+    },
+    {
+      "id": "altar",
+      "name": "月环祭坛",
+      "art": "arcane",
+      "site": "ley",
+      "hp": 15,
+      "income": {
+        "mana": 2
+      },
+      "damage": 0,
+      "reach": 0,
+      "interval": 1,
+      "block": true,
+      "upgrade": {
+        "cost": {
+          "gold": 4,
+          "mana": 2
+        },
+        "hp": 6,
+        "income": {
+          "mana": 1
+        },
+        "effect": 1
+      },
+      "effect": "ritual"
+    }
+  ],
+  "units": [
+    {
+      "id": "spear",
+      "name": "鸢尾矛兵",
+      "hp": 17,
+      "damage": 4,
+      "reach": 1.5,
+      "interval": 6,
+      "speed": 2.3,
+      "armor": 0,
+      "upkeep": 1,
+      "attack": "pierce"
+    },
+    {
+      "id": "archer",
+      "name": "雾林弓手",
+      "hp": 12,
+      "damage": 4,
+      "reach": 3.15,
+      "interval": 8,
+      "speed": 1.65,
+      "armor": 0,
+      "upkeep": 1,
+      "attack": "ranged"
+    },
+    {
+      "id": "lancer",
+      "name": "赤鬃骑兵",
+      "hp": 23,
+      "damage": 6,
+      "reach": 1.18,
+      "interval": 8,
+      "speed": 3,
+      "armor": 0,
+      "upkeep": 2,
+      "attack": "charge"
+    },
+    {
+      "id": "mage",
+      "name": "余烬法师",
+      "hp": 14,
+      "damage": 5,
+      "reach": 2.7,
+      "interval": 10,
+      "speed": 1.7,
+      "armor": 0,
+      "upkeep": 1,
+      "attack": "splash"
+    },
+    {
+      "id": "sentinel",
+      "name": "重甲誓卫",
+      "hp": 33,
+      "damage": 5,
+      "reach": 1.18,
+      "interval": 8,
+      "speed": 1.4,
+      "armor": 2,
+      "upkeep": 2
+    },
+    {
+      "id": "stalker",
+      "name": "鸦影刺客",
+      "hp": 15,
+      "damage": 7,
+      "reach": 1.18,
+      "interval": 5,
+      "speed": 2.8,
+      "armor": 0,
+      "upkeep": 1,
+      "attack": "pierce"
+    },
+    {
+      "id": "colossus",
+      "name": "砾脊巨人",
+      "hp": 42,
+      "damage": 9,
+      "reach": 1.25,
+      "interval": 11,
+      "speed": 1.05,
+      "armor": 2,
+      "upkeep": 3,
+      "attack": "siege"
+    },
+    {
+      "id": "medic",
+      "name": "白铃治疗师",
+      "hp": 15,
+      "damage": 4,
+      "reach": 2.5,
+      "interval": 8,
+      "speed": 1.9,
+      "armor": 0,
+      "upkeep": 1,
+      "attack": "heal"
+    },
+    {
+      "id": "summoner",
+      "name": "根语召唤师",
+      "hp": 16,
+      "damage": 3,
+      "reach": 2.4,
+      "interval": 12,
+      "speed": 1.5,
+      "armor": 0,
+      "upkeep": 2,
+      "attack": "summon"
+    },
+    {
+      "id": "drake",
+      "name": "炭翼龙骑",
+      "hp": 31,
+      "damage": 8,
+      "reach": 2.2,
+      "interval": 10,
+      "speed": 2.2,
+      "armor": 1,
+      "upkeep": 3,
+      "attack": "splash"
+    },
+    {
+      "id": "waykeeper",
+      "name": "渡桥誓卫",
+      "hp": 35,
+      "damage": 6,
+      "reach": 1.3,
+      "interval": 7,
+      "speed": 1.65,
+      "armor": 2,
+      "upkeep": 2,
+      "attack": "hero"
+    }
+  ],
+  "enemies": [
+    {
+      "id": "skirmisher",
+      "name": "褐羽射手",
+      "hp": 12,
+      "damage": 3,
+      "reach": 2.6,
+      "interval": 10,
+      "speed": 1.3,
+      "armor": 0,
+      "attack": "ranged"
+    },
+    {
+      "id": "rider",
+      "name": "碎蹄先锋",
+      "hp": 17,
+      "damage": 4,
+      "reach": 1.18,
+      "interval": 8,
+      "speed": 2.45,
+      "armor": 0,
+      "attack": "charge"
+    },
+    {
+      "id": "hexer",
+      "name": "盐灰咒师",
+      "hp": 17,
+      "damage": 4,
+      "reach": 2.9,
+      "interval": 12,
+      "speed": 1.15,
+      "armor": 0,
+      "attack": "splash"
+    },
+    {
+      "id": "ogre",
+      "name": "裂岩巨兽",
+      "hp": 38,
+      "damage": 7,
+      "reach": 1.2,
+      "interval": 12,
+      "speed": 1,
+      "armor": 1,
+      "attack": "siege"
+    },
+    {
+      "id": "captain",
+      "name": "黑旗精锐",
+      "hp": 26,
+      "damage": 6,
+      "reach": 1.3,
+      "interval": 8,
+      "speed": 1.55,
+      "armor": 2,
+      "attack": "pierce"
+    },
+    {
+      "id": "marshal",
+      "name": "断桥元帅",
+      "hp": 88,
+      "damage": 9,
+      "reach": 1.5,
+      "interval": 12,
+      "speed": 1,
+      "armor": 2,
+      "attack": "boss"
+    }
+  ],
+  "cards": [
+    {
+      "id": "mine",
+      "name": "岩脊金矿",
+      "kind": "building",
+      "ref": "mine",
+      "cost": {
+        "gold": 4,
+        "wood": 1
+      },
+      "description": "每波产出 3 金币。升级额外产出 2 金币。"
+    },
+    {
+      "id": "market",
+      "name": "桥市商栈",
+      "kind": "building",
+      "ref": "market",
+      "cost": {
+        "gold": 5,
+        "wood": 2
+      },
+      "description": "提高相邻农圃和金矿的金币产出；紧邻粮栈再多 1 金币。"
+    },
+    {
+      "id": "storehouse",
+      "name": "双仓粮栈",
+      "kind": "building",
+      "ref": "storehouse",
+      "cost": {
+        "gold": 4,
+        "wood": 3
+      },
+      "description": "向右占两格。提高金币、食物、木材和魔力上限。"
+    },
+    {
+      "id": "barracks",
+      "name": "鸢尾兵营",
+      "kind": "building",
+      "ref": "barracks",
+      "cost": {
+        "gold": 4,
+        "wood": 2
+      },
+      "description": "每波召集一支矛兵。升级或紧邻栅墙，各增加一个名额。"
+    },
+    {
+      "id": "stable",
+      "name": "赤鬃骑营",
+      "kind": "building",
+      "ref": "stable",
+      "cost": {
+        "gold": 5,
+        "wood": 3
+      },
+      "description": "每波召集一支冲锋骑兵。升级或紧邻英雄厅，各增加一个名额。"
+    },
+    {
+      "id": "bowcamp",
+      "name": "雾林弓营",
+      "kind": "building",
+      "ref": "bowcamp",
+      "cost": {
+        "gold": 5,
+        "wood": 2
+      },
+      "description": "每波召集一支远程弓手。升级或紧邻兵营，各增加一个名额。"
+    },
+    {
+      "id": "magetower",
+      "name": "流火法师塔",
+      "kind": "building",
+      "ref": "magetower",
+      "cost": {
+        "gold": 4,
+        "mana": 2
+      },
+      "description": "快速发射单体魔法弹。升级提高伤害和射程。"
+    },
+    {
+      "id": "arcanetower",
+      "name": "裂光魔法塔",
+      "kind": "building",
+      "ref": "arcanetower",
+      "cost": {
+        "gold": 6,
+        "mana": 3
+      },
+      "description": "投射范围魔法，附近敌人受到溅射伤害。"
+    },
+    {
+      "id": "bombard",
+      "name": "铜脊炮塔",
+      "kind": "building",
+      "ref": "bombard",
+      "cost": {
+        "gold": 7,
+        "wood": 4
+      },
+      "description": "慢速发射高威力单体炮弹，优先反制重甲。"
+    },
+    {
+      "id": "shrine",
+      "name": "晨钟神殿",
+      "kind": "building",
+      "ref": "shrine",
+      "cost": {
+        "gold": 5,
+        "mana": 2
+      },
+      "description": "为所有参战友军提供 4 点生命。升级后提供 8 点。"
+    },
+    {
+      "id": "lab",
+      "name": "天衡研究所",
+      "kind": "building",
+      "ref": "lab",
+      "cost": {
+        "gold": 5,
+        "wood": 2
+      },
+      "description": "远征可研究一项科技。降低其他建筑的升级金币费用；升级后优惠从 1 金币增至 2 金币。"
+    },
+    {
+      "id": "hall",
+      "name": "誓盾英雄厅",
+      "kind": "building",
+      "ref": "hall",
+      "cost": {
+        "gold": 7,
+        "wood": 3
+      },
+      "description": "每波召集渡桥誓卫。英雄首次半血时为附近友军恢复生命，英雄厅升级令英雄生命提高 10。"
+    },
+    {
+      "id": "altar",
+      "name": "月环祭坛",
+      "kind": "building",
+      "ref": "altar",
+      "cost": {
+        "gold": 4,
+        "wood": 2
+      },
+      "description": "建在灵脉上，增益相邻法术设施。本局可花费魔力重新占卜一次战利品。"
+    },
+    {
+      "id": "spear",
+      "name": "鸢尾矛兵",
+      "kind": "unit",
+      "ref": "spear",
+      "cost": {
+        "gold": 2,
+        "food": 2
+      },
+      "description": "长矛可攻击相邻斜格的敌军，并无视护甲。"
+    },
+    {
+      "id": "archer",
+      "name": "雾林弓手",
+      "kind": "unit",
+      "ref": "archer",
+      "cost": {
+        "gold": 3,
+        "food": 2
+      },
+      "description": "远距离射击，适合部署在前排后方。"
+    },
+    {
+      "id": "lancer",
+      "name": "赤鬃骑兵",
+      "kind": "unit",
+      "ref": "lancer",
+      "cost": {
+        "gold": 4,
+        "food": 2
+      },
+      "description": "移动后第一次近战攻击额外造成 3 点伤害。"
+    },
+    {
+      "id": "mage",
+      "name": "余烬法师",
+      "kind": "unit",
+      "ref": "mage",
+      "cost": {
+        "gold": 3,
+        "mana": 2
+      },
+      "description": "远程溅射，对成群敌人更有效。"
+    },
+    {
+      "id": "sentinel",
+      "name": "重甲誓卫",
+      "kind": "unit",
+      "ref": "sentinel",
+      "cost": {
+        "gold": 4,
+        "food": 3
+      },
+      "description": "耐久高、护甲强，适合堵住桥头。"
+    },
+    {
+      "id": "stalker",
+      "name": "鸦影刺客",
+      "kind": "unit",
+      "ref": "stalker",
+      "cost": {
+        "gold": 4,
+        "food": 2
+      },
+      "description": "快速贴近敌军，攻击无视护甲。"
+    },
+    {
+      "id": "colossus",
+      "name": "砾脊巨人",
+      "kind": "unit",
+      "ref": "colossus",
+      "cost": {
+        "gold": 5,
+        "food": 3
+      },
+      "description": "重击并能在近距离同时打伤其他敌人。"
+    },
+    {
+      "id": "medic",
+      "name": "白铃治疗师",
+      "kind": "unit",
+      "ref": "medic",
+      "cost": {
+        "gold": 3,
+        "mana": 2
+      },
+      "description": "为附近受伤友军恢复生命。"
+    },
+    {
+      "id": "summoner",
+      "name": "根语召唤师",
+      "kind": "unit",
+      "ref": "summoner",
+      "cost": {
+        "gold": 4,
+        "mana": 3
+      },
+      "description": "附近有敌人时召唤一名矛灵，每名召唤师每波最多召唤一次。"
+    },
+    {
+      "id": "drake",
+      "name": "炭翼龙骑",
+      "kind": "unit",
+      "ref": "drake",
+      "cost": {
+        "gold": 6,
+        "food": 3,
+        "mana": 2
+      },
+      "description": "以吐息造成区域伤害。"
+    }
+  ],
+  "march": {
+    "name": "灰旗远征",
+    "start": {
+      "gold": 23,
+      "food": 10,
+      "wood": 16,
+      "mana": 5
+    },
+    "starter": [
+      "watch",
+      "watch",
+      "farm",
+      "wall",
+      "guard",
+      "ember",
+      "mine",
+      "barracks",
+      "bowcamp",
+      "storehouse"
+    ],
+    "income": {
+      "gold": 8,
+      "food": 4,
+      "wood": 4,
+      "mana": 2
+    },
+    "waves": [
+      {
+        "name": "长桥哨声",
+        "groups": [
+          {
+            "enemy": "raider",
+            "count": 5,
+            "gap": 9
+          },
+          {
+            "enemy": "skirmisher",
+            "count": 2,
+            "gap": 11
+          }
+        ]
+      },
+      {
+        "name": "逐风骑队",
+        "groups": [
+          {
+            "enemy": "rider",
+            "count": 4,
+            "gap": 8
+          },
+          {
+            "enemy": "raider",
+            "count": 5,
+            "gap": 7
+          },
+          {
+            "enemy": "skirmisher",
+            "count": 3,
+            "gap": 10
+          }
+        ]
+      },
+      {
+        "name": "盐灰秘使",
+        "groups": [
+          {
+            "enemy": "breaker",
+            "count": 4,
+            "gap": 9
+          },
+          {
+            "enemy": "hexer",
+            "count": 3,
+            "gap": 12
+          },
+          {
+            "enemy": "raider",
+            "count": 6,
+            "gap": 7
+          }
+        ]
+      },
+      {
+        "name": "巨石渡口",
+        "groups": [
+          {
+            "enemy": "ogre",
+            "count": 3,
+            "gap": 13
+          },
+          {
+            "enemy": "rider",
+            "count": 5,
+            "gap": 8
+          },
+          {
+            "enemy": "skirmisher",
+            "count": 4,
+            "gap": 9
+          }
+        ]
+      },
+      {
+        "name": "黑旗集结",
+        "groups": [
+          {
+            "enemy": "captain",
+            "count": 4,
+            "gap": 9
+          },
+          {
+            "enemy": "hexer",
+            "count": 3,
+            "gap": 10
+          },
+          {
+            "enemy": "breaker",
+            "count": 6,
+            "gap": 9
+          },
+          {
+            "enemy": "rider",
+            "count": 3,
+            "gap": 8
+          }
+        ]
+      },
+      {
+        "name": "元帅的最后通牒",
+        "groups": [
+          {
+            "enemy": "breaker",
+            "count": 4,
+            "gap": 8
+          },
+          {
+            "enemy": "marshal",
+            "count": 1,
+            "gap": 13
+          },
+          {
+            "enemy": "captain",
+            "count": 3,
+            "gap": 10
+          },
+          {
+            "enemy": "hexer",
+            "count": 3,
+            "gap": 13
+          },
+          {
+            "enemy": "ogre",
+            "count": 3,
+            "gap": 17
+          }
+        ]
+      }
+    ]
+  }
+}

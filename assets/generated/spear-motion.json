@@ -1,0 +1,8 @@
+{
+  "cellWidth": 64,
+  "cellHeight": 54,
+  "baseline": 50,
+  "walkFrames": 6,
+  "actionFrames": 3,
+  "idleFrame": 8
+}

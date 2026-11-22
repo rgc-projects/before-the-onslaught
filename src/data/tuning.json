@@ -1,0 +1,25 @@
+{
+  "combat": {
+    "chargeBonusDamage": 3,
+    "cavalryDamagePerPower": 2,
+    "cavalrySplashRadius": 1.5,
+    "spellSplashRadius": 1.15,
+    "siegeSplashRadius": 0.95,
+    "marshal": { "healthTrigger": 0.5, "radius": 2.4, "damage": 5 },
+    "hero": { "healthTrigger": 0.5, "radius": 2.4, "healing": 4, "upgradedHealth": 10 },
+    "spiritHealth": 9
+  },
+  "buildings": {
+    "riverFood": 1,
+    "warehouseMarketGold": 1,
+    "marketGold": 1,
+    "ritualPower": 1,
+    "shrineHealth": 4,
+    "researchDiscount": 1,
+    "reinforcedWatchTicks": 1
+  },
+  "shop": { "offerCount": 6, "rotationStride": 5, "standardGold": 2, "premiumGold": 3, "premiumThreshold": 5, "farmOfferWave": 3 },
+  "refine": { "improve": { "gold": 4 }, "retire": { "gold": 2 } },
+  "relocation": { "building": { "wood": 1 }, "rally": { "food": 1 } },
+  "divination": { "mana": 3 }
+}

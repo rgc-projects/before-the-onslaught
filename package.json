@@ -1,0 +1,37 @@
+{
+  "name": "before-the-onslaught",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "engines": {
+    "node": ">=20.12.0"
+  },
+  "scripts": {
+    "dev": "vite --host 127.0.0.1",
+    "build": "tsc --noEmit && vite build",
+    "build:playtest": "tsc --noEmit && node tools/build-playtest.mjs",
+    "preview": "vite preview --host 127.0.0.1",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run --dir tests",
+    "test:browser": "node tests/browser-smoke.mjs",
+    "test:browser:march": "node tests/browser-march.mjs",
+    "test:browser:sandbox": "node tests/browser-sandbox.mjs",
+    "test:browser:kingdoms": "node tests/browser-kingdoms.mjs",
+    "test:browser:focus": "node tests/browser-focus.mjs",
+    "test:browser:progress": "node tests/browser-progress.mjs",
+    "test:browser:release": "node tests/browser-release.mjs",
+    "test:browser:support": "node tests/browser-support.mjs",
+    "profile:wave": "node tools/profile-wave.mjs",
+    "docs:content": "node tools/export-content.mjs",
+    "balance": "node tools/sample-balance.mjs"
+  },
+  "dependencies": {
+    "phaser": "3.90.0"
+  },
+  "devDependencies": {
+    "playwright": "1.56.1",
+    "typescript": "5.9.3",
+    "vite": "6.4.6",
+    "vitest": "3.2.7"
+  }
+}

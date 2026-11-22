@@ -1,0 +1,5 @@
+[
+  { "id": "fletching", "name": "稳定弓弦", "cost": { "gold": 4, "wood": 2 }, "description": "所有松岗箭塔与雾林弓手的射程增加 0.5 格。", "power": 0.5 },
+  { "id": "provisions", "name": "行军干粮", "cost": { "gold": 4, "food": 2 }, "description": "开战前额外获得 3 食物。", "power": 3 },
+  { "id": "masonry", "name": "铁木工法", "cost": { "gold": 4, "mana": 2 }, "description": "开战前每座存活的栅墙恢复最多 6 点耐久。可与钢铁王国叠加。", "power": 6 }
+]

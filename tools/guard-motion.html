@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>兵锋未至 · 卫士动作对照</title>
+<style>
+  :root { color-scheme: dark; font: 16px system-ui, sans-serif; color: #f4e7ca; background: #142024; }
+  main { max-width: 1050px; margin: auto; padding: 28px 18px 40px; }
+  h1 { margin: 0 0 16px; font-size: clamp(23px, 3vw, 34px); }
+  .controls, .comparison { display: grid; gap: 12px; }
+  .controls { display: flex; flex-wrap: wrap; align-items: center; margin-bottom: 16px; }
+  label, button { background: #243337; padding: 8px 10px; border-radius: 4px; border: 1px solid #b8a37a55; }
+  select { margin-left: 7px; font: inherit; }
+  button { color: inherit; font: inherit; cursor: pointer; }
+  .comparison { grid-template-columns: repeat(2, minmax(0, 1fr)); }
+  section { min-width: 0; padding: 14px; background: #1d2b2d; border: 1px solid #b8a37a55; border-radius: 6px; }
+  h2 { margin: 0 0 10px; font-size: 17px; }
+  canvas { display: block; width: 100%; aspect-ratio: 2; image-rendering: pixelated; background: #52694c; }
+  output { display: block; margin-top: 8px; font-size: 13px; color: #ced6c2; }
+  [download] { display: inline-block; margin-top: 8px; color: #e4c98c; font-size: 13px; }
+  @media (max-width: 650px) { .comparison { grid-template-columns: 1fr; } }
+</style>
+</head>
+<body>
+<main>
+  <h1>卫士走路动作对照</h1>
+  <div class="controls">
+    <label for="rate">帧率上限<select id="rate"><option value="60">60 FPS</option><option value="120" selected>120 FPS</option><option value="display">跟随屏幕</option></select></label>
+    <label for="formation">同屏单位<select id="formation"><option value="1">1 人</option><option value="40">40 人</option></select></label>
+    <label><input id="move" type="checkbox" checked> 在地面上行走</label>
+  </div>
+  <div class="comparison">
+    <section><h2>逐帧绘制</h2><canvas id="sheet" width="480" height="240" aria-label="逐帧绘制的卫士"></canvas><output for="rate formation"></output><a id="export-sheet" download="frames-strip.png">下载逐帧图集</a></section>
+    <section><h2>关节动画导出精灵帧</h2><canvas id="rig" width="480" height="240" aria-label="关节动画导出的卫士"></canvas><output for="rate formation"></output><a id="export-rig" download="rig-strip.png">下载关节导出图集</a></section>
+  </div>
+</main>
+<script type="module" src="./guard-motion.mjs"></script>
+</body>
+</html>

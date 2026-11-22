@@ -1,0 +1,211 @@
+{
+  "routes": [
+    {
+      "id": "ferry",
+      "name": "北渡浅滩",
+      "description": "浅滩移到第 2 和第 6 行；灰旗会在部分波次以射手取代劫掠者。",
+      "bridges": [
+        1,
+        5
+      ],
+      "swaps": [
+        {
+          "wave": 0,
+          "from": "raider",
+          "to": "skirmisher",
+          "count": 1
+        },
+        {
+          "wave": 2,
+          "from": "raider",
+          "to": "skirmisher",
+          "count": 2
+        },
+        {
+          "wave": 4,
+          "from": "breaker",
+          "to": "skirmisher",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "shoal",
+      "name": "南桥盐湾",
+      "description": "南侧第二座桥移到第 6 行；敌军调来更多骑兵。",
+      "bridges": [
+        2,
+        5
+      ],
+      "swaps": [
+        {
+          "wave": 1,
+          "from": "raider",
+          "to": "rider",
+          "count": 2
+        },
+        {
+          "wave": 3,
+          "from": "skirmisher",
+          "to": "rider",
+          "count": 2
+        }
+      ]
+    },
+    {
+      "id": "crossing",
+      "name": "中央双桥",
+      "description": "两座桥位于第 3 和第 5 行。",
+      "bridges": [
+        2,
+        4
+      ],
+      "swaps": []
+    }
+  ],
+  "districts": [
+    { "name": "北岭外营", "wave": 1, "cells": [{ "x": 6, "y": 0 }, { "x": 7, "y": 0 }, { "x": 8, "y": 0 }, { "x": 9, "y": 0 }] },
+    { "name": "南岭外营", "wave": 3, "cells": [{ "x": 6, "y": 6 }, { "x": 7, "y": 6 }, { "x": 8, "y": 6 }, { "x": 9, "y": 6 }] }
+  ],
+  "leySites": [{ "x": 4, "y": 3 }, { "x": 6, "y": 2 }, { "x": 8, "y": 2 }, { "x": 8, "y": 4 }, { "x": 7, "y": 0 }, { "x": 7, "y": 6 }],
+  "relics": [
+    {
+      "id": "grain-ledger",
+      "name": "桥市粮册",
+      "description": "开战前额外获得 2 食物。",
+      "trait": "provisions",
+      "power": 2
+    },
+    {
+      "id": "ember-lens",
+      "name": "余烬棱镜",
+      "description": "流火法师塔与裂光魔法塔伤害各提高 1 点。",
+      "trait": "arcane",
+      "power": 1
+    },
+    {
+      "id": "muster-banner",
+      "name": "渡口军旗",
+      "description": "出阵友军的最大生命各提高 3 点。",
+      "trait": "vitality",
+      "power": 3
+    },
+    {
+      "id": "gate-keystone",
+      "name": "旧门楔石",
+      "description": "城堡每次受击少损失 1 点生命，每次仍至少受到 1 点伤害。",
+      "trait": "guard",
+      "power": 1
+    }
+  ],
+  "events": [
+    {
+      "id": "merchant",
+      "name": "桥市行商",
+      "description": "商人愿以旧粮册换金币，也可以拆走他留下的货箱。",
+      "choices": [
+        {
+          "id": "ledger",
+          "label": "买下粮册",
+          "cost": {
+            "gold": 4
+          },
+          "relic": "grain-ledger"
+        },
+        {
+          "id": "crates",
+          "label": "拆点货箱",
+          "cost": {},
+          "gain": {
+            "wood": 2,
+            "food": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "archive",
+      "name": "余烬书库",
+      "description": "密柜里有一枚被封存的棱镜。拆除结界需要魔力。",
+      "choices": [
+        {
+          "id": "lens",
+          "label": "解除棱镜结界",
+          "cost": {
+            "mana": 3
+          },
+          "relic": "ember-lens"
+        },
+        {
+          "id": "supplies",
+          "label": "带走封存物资",
+          "cost": {},
+          "card": "archive-cache"
+        }
+      ]
+    },
+    {
+      "id": "veterans",
+      "name": "渡口退伍兵",
+      "description": "给退伍兵一顿热饭，就能换来他们珍藏的军旗。",
+      "choices": [
+        {
+          "id": "banner",
+          "label": "招待退伍兵",
+          "cost": {
+            "food": 3
+          },
+          "relic": "muster-banner"
+        },
+        {
+          "id": "bounty",
+          "label": "领取对方的赏金",
+          "cost": {},
+          "gain": {
+            "gold": 2,
+            "mana": 1
+          }
+        }
+      ]
+    },
+    {
+      "id": "gate",
+      "name": "旧门匠人",
+      "description": "匠人拿着一块还能用的门楔，代价是用于修桥的木材。",
+      "choices": [
+        {
+          "id": "stone",
+          "label": "协助修桥",
+          "cost": {
+            "wood": 4
+          },
+          "relic": "gate-keystone"
+        },
+        {
+          "id": "tip",
+          "label": "接受匠人指路",
+          "cost": {},
+          "gain": {
+            "food": 2,
+            "wood": 1
+          }
+        }
+      ]
+    }
+  ],
+  "cards": [
+    {
+      "id": "archive-cache",
+      "name": "密柜补给",
+      "kind": "event",
+      "rarity": "rare",
+      "ref": "",
+      "cost": {},
+      "gain": {
+        "wood": 4,
+        "mana": 1
+      },
+      "description": "开启沿途拾得的密柜，获得 4 木材和 1 魔力。使用后消耗。"
+    }
+  ]
+}

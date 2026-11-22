@@ -1,0 +1,156 @@
+{
+  "schema_version": 1,
+  "description": "实际选用的资产清单；登记字段见 README.md。",
+  "assets": [
+    {
+      "id": "kenney-interface-click",
+      "files": ["assets/originals/kenney-interface/click_001.ogg"],
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "author": "Kenney",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-19",
+      "license": "CC0-1.0",
+      "license_file": "public/licenses/kenney-interface.txt",
+      "sha256": "ccfb7fa0cccdd9faec0eb16033c732b1e308d139d80f799161495d58f7adcdb9",
+      "changes": "原音频未修改",
+      "attribution": "Kenney Interface Sounds"
+    },
+    {
+      "id": "kenney-interface-confirmation",
+      "files": ["assets/originals/kenney-interface/confirmation_001.ogg"],
+      "source_url": "https://kenney.nl/assets/interface-sounds",
+      "author": "Kenney",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-19",
+      "license": "CC0-1.0",
+      "license_file": "public/licenses/kenney-interface.txt",
+      "sha256": "063564703b6094d70718a3e787a55cc9141611e4ecd6b6637f8828f79b4a8c3a",
+      "changes": "原音频未修改",
+      "attribution": "Kenney Interface Sounds"
+    },
+    {
+      "id": "nine-kingdoms-pixel-atlas",
+      "files": ["assets/generated/nine-kingdoms-sprites.webp", "assets/generated/nine-kingdoms-sprites.json"],
+      "source_url": null,
+      "author": "项目素材，由 Codex 内置 ImageGen 生成",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-19",
+      "license": "项目生成素材，来源说明随附",
+      "license_file": "assets/originals/nine-kingdoms/PROVENANCE.md",
+      "sha256": "4a6732f7ddd382440a494fa842fa30778253be111412c2d835e38059e87ba689",
+      "changes": "从四张源图按验证后的格线裁切、整理透明边缘，合并成 576 × 768 的 WebP 图集",
+      "attribution": "Nine Kingdoms 像素图集",
+      "source_hashes": {
+        "assets/originals/nine-kingdoms/structures-v1.png": "34c7d1b2b62234588ba7aea32bbbca3cd3ed2d673a47593ab135d67fe587346e",
+        "assets/originals/nine-kingdoms/units-v1.png": "6f810c65ddc580d6e4e84faa1917ef9ccb03ef5eb7d54bacd4f8049680724264",
+        "assets/originals/nine-kingdoms/moon-altar-v1.png": "dd199cccaff80b8153716517c10bd17c3ecd7706886987ebed534faec803b454",
+        "assets/originals/nine-kingdoms/mandates-v1.png": "16eb7cadb3769c6965d19d0eb2a23d7ccaa846c34ee94f6c79fb03d314a0625b",
+        "assets/generated/nine-kingdoms-sprites.json": "a807388294fdf7b3d4641c652d48bea4d1f371606ebc4f5fcd011e1e8027fc0f"
+      }
+    },
+    {
+      "id": "nine-kingdoms-menu-crest",
+      "files": ["assets/generated/menu-crest.webp"],
+      "source_url": null,
+      "author": "项目素材，由 Codex 内置 ImageGen 生成",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-21",
+      "license": "项目生成素材，来源说明随附",
+      "license_file": "assets/originals/nine-kingdoms/PROVENANCE.md",
+      "sha256": "e2054a9d304fb6a4b2c8ba49073e96955f517ba225bebf562c1fa1d6e16be36c",
+      "changes": "取基础图集 96 × 96 的城堡格单独做无损 WebP，保留所有可见像素",
+      "attribution": "Nine Kingdoms 主菜单城堡",
+      "source_hashes": {
+        "assets/generated/nine-kingdoms-sprites.webp": "4a6732f7ddd382440a494fa842fa30778253be111412c2d835e38059e87ba689"
+      }
+    },
+    {
+      "id": "nine-kingdoms-guard-walk",
+      "files": ["assets/generated/guard-walk.png"],
+      "source_url": null,
+      "author": "项目素材，由 Codex 内置 ImageGen 生成",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-20",
+      "license": "项目生成素材，来源说明随附",
+      "license_file": "assets/prototypes/guard-motion/README.md",
+      "sha256": "3c11f1bfa4fe027589f983a8f76000771f60f7c2ad2c75dfd4bce2cfcb47f3e1",
+      "changes": "从卫士六张动作稿裁为 288 × 44 透明步态图集，保留 48 × 44 固定像素锚点",
+      "attribution": "Nine Kingdoms 卫士行走动作",
+      "source_hashes": {
+        "assets/prototypes/guard-motion/frames.png": "bb278da18b0cd3b4a810f12c44dc9df72cacf04b7070d72a7d2f31c8eb7f8507"
+      }
+    },
+    {
+      "id": "nine-kingdoms-archer-lancer-motion",
+      "files": ["assets/generated/unit-motion.webp", "assets/generated/unit-motion.json"],
+      "source_url": null,
+      "author": "项目素材，由 Codex 内置 ImageGen 生成",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-20",
+      "license": "项目生成素材，来源说明随附",
+      "license_file": "assets/originals/nine-kingdoms/PROVENANCE.md",
+      "sha256": "aeaaaa967bdacf3a55598fc842259d4faa7cf937d091f9ee469e5bf09f9aebdb",
+      "changes": "两套动作图各裁切六帧移动及两帧攻击，共装入 512 × 108 透明图集",
+      "attribution": "Nine Kingdoms 雾林弓手和赤鬃骑兵动作",
+      "source_hashes": {
+        "assets/originals/nine-kingdoms/archer-motion-v1.png": "4dcf6a7c7d4c8420eacc19c69633a3c83a579ca057afe44b9418387a8d6d21bb",
+        "assets/originals/nine-kingdoms/lancer-motion-v1.png": "fb2133d50c37f581def9b76894443ecb519d6c639606ff11e86ddc692cdcfbca",
+        "assets/generated/unit-motion.json": "963978c31405c7896a7270f40e3630b471fd8f3a7ca084f5bb7a2b76dc5ac5cc"
+      }
+    },
+    {
+      "id": "nine-kingdoms-marshal-motion",
+      "files": ["assets/generated/marshal-motion.webp", "assets/generated/marshal-motion.json"],
+      "source_url": null,
+      "author": "项目素材，由 Codex 内置 ImageGen 生成",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-20",
+      "license": "项目生成素材，来源说明随附",
+      "license_file": "assets/originals/nine-kingdoms/PROVENANCE.md",
+      "sha256": "34dbb3e2c42e493aea7b88bc07f0aa72af87ae5344901ef9b8724ed5eca0f40a",
+      "changes": "按固定比例和脚底锚点排入 1008 × 68 透明图集，收录六帧行进、三帧挥剑、三帧反击",
+      "attribution": "Nine Kingdoms 断桥元帅动作",
+      "source_hashes": {
+        "assets/originals/nine-kingdoms/units-v1.png": "6f810c65ddc580d6e4e84faa1917ef9ccb03ef5eb7d54bacd4f8049680724264",
+        "assets/originals/nine-kingdoms/marshal-motion-v1.png": "6cd84031a59c3f6dce3e08e0fbaf1c4e3ed58aac1b910c77eb7217ade10ba36e",
+        "assets/generated/marshal-motion.json": "b61a59d363f0531061022a665fbafdaff39c32759523b49123024d2ed6293e52"
+      }
+    },
+    {
+      "id": "nine-kingdoms-spear-motion",
+      "files": ["assets/generated/spear-motion.webp", "assets/generated/spear-motion.json"],
+      "source_url": null,
+      "author": "项目素材，由 Codex 内置 ImageGen 生成",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-22",
+      "license": "项目生成素材，来源说明随附",
+      "license_file": "assets/originals/nine-kingdoms/PROVENANCE.md",
+      "sha256": "46503ad1bdf485584e8470055a2be53d9969ba29b0e8813556e11269458e7bcc",
+      "changes": "沿透明间隙裁切，按躯干和脚底对齐，六帧行进与三帧刺击排入 576 × 54 透明图集",
+      "attribution": "Nine Kingdoms 鸢尾矛兵动作",
+      "source_hashes": {
+        "assets/originals/nine-kingdoms/units-v1.png": "6f810c65ddc580d6e4e84faa1917ef9ccb03ef5eb7d54bacd4f8049680724264",
+        "assets/originals/nine-kingdoms/spear-motion-v1.png": "d3f0e6a5096cb0404d0b686e11ead42eb77cde86cf5242e1d518e58f92d0afe3",
+        "assets/generated/spear-motion.json": "e7ef3b49ba10c35890520fbdcc095697bb68a5d407e66c3e303c15c559fd4424"
+      }
+    },
+    {
+      "id": "nine-kingdoms-captain-motion",
+      "files": ["assets/generated/captain-motion.webp", "assets/generated/captain-motion.json"],
+      "source_url": null,
+      "author": "项目素材，由 Codex 内置 ImageGen 生成",
+      "version_or_revision": "1.0",
+      "downloaded_on": "2026-11-20",
+      "license": "项目生成素材，来源说明随附",
+      "license_file": "assets/originals/nine-kingdoms/PROVENANCE.md",
+      "sha256": "35332cba3380c6f9c135fa92967a43f0bca087ad2e57b27b02c42bb69686367b",
+      "changes": "裁切并统一脚底，六帧行进与三帧战镐动作排入 576 × 54 透明图集",
+      "attribution": "Nine Kingdoms 黑旗精锐动作",
+      "source_hashes": {
+        "assets/originals/nine-kingdoms/units-v1.png": "6f810c65ddc580d6e4e84faa1917ef9ccb03ef5eb7d54bacd4f8049680724264",
+        "assets/originals/nine-kingdoms/captain-motion-v1.png": "6126672b049733a6da17450d6ca0e9085fe75efd6c1e91fb038d428ae8275b0d",
+        "assets/generated/captain-motion.json": "e7ef3b49ba10c35890520fbdcc095697bb68a5d407e66c3e303c15c559fd4424"
+      }
+    }
+  ]
+}

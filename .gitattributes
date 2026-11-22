@@ -1,0 +1,17 @@
+* text=auto eol=lf
+*.md text eol=lf
+*.json text eol=lf
+*.py text eol=lf
+*.js text eol=lf
+*.mjs text eol=lf
+*.ts text eol=lf
+*.svg text eol=lf
+*.png binary
+*.webp binary
+*.jpg binary
+*.ogg binary
+*.wav binary
+*.glb binary
+*.zip binary
+assets/generated/*.json -text
+public/licenses/* -text

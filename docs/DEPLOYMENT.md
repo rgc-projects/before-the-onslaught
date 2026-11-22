@@ -2,9 +2,27 @@
 
 网页版使用 `npm.cmd run build` 生成 `dist/`。将 `dist/` 内的文件按原结构放到静态站点目录。根路径或以 `/` 结尾的子目录都可用，例如 `/releases/nine-kingdoms/`。入口、图像、音效和许可一起发布。静态主机应为 HTML、JavaScript、CSS、WebP、PNG 和 Ogg 提供对应的内容类型。
 
+## Cloudflare Workers
+
+在 Cloudflare 控制台进入 **Workers & Pages**，创建 Worker 并连接 GitHub 仓库 `rgc-projects/before-the-onslaught`。如果列表里没有仓库，在 GitHub 授权 Cloudflare Workers & Pages 应用访问这一个仓库。 [Cloudflare GitHub 接入说明](https://developers.cloudflare.com/workers/ci-cd/builds/git-integration/github-integration/)
+
+| Cloudflare 字段 | 值 |
+| --- | --- |
+| Worker 名称 | `before-the-onslaught` |
+| 生产分支 | `main` |
+| 根目录 | 留空，使用仓库根目录 |
+| 构建命令 | `npm run build` |
+| 部署命令 | `npx wrangler deploy` |
+
+使用 Workers Builds 默认的 Node.js 24 即可。项目需要 Node.js 22.12 或更新版本。`wrangler.jsonc` 会把 `dist/` 发布为静态资源，入口为 Worker 域名的 `/`，游戏无需服务端脚本、额外绑定或运行时环境变量。 [构建配置](https://developers.cloudflare.com/workers/ci-cd/builds/configuration/) · [构建环境](https://developers.cloudflare.com/workers/ci-cd/builds/build-image/) · [静态资源](https://developers.cloudflare.com/workers/static-assets/)
+
+也可以从本地部署。安装锁定依赖后，用 `npm run deploy` 构建并通过 Wrangler 登录部署。在 Windows PowerShell 中可使用 `npm.cmd`。要先在本机验收，运行 `npm run build` 和 `npm run preview:workers`，打开终端显示的本机地址。
+
+游戏进度保存在玩家浏览器中。换到 `workers.dev` 或自定义域名前，从旧地址导出「进度备份」，再到新地址导入。Cloudflare 默认使用 ETag 重新校验静态资源。下文的通用托管验收还要求哈希文件长期缓存与压缩，使用那套验收标准时需另行配置对应规则。 [进度迁移](PLAYTEST.md#换设备或试玩包时迁移进度) · [Workers 静态资源响应头](https://developers.cloudflare.com/workers/static-assets/headers/)
+
 ## 构建交付包
 
-准备 Node.js 20.12 或更新版本、npm 及 Python 3.9 或更新版本。在游戏目录执行以下命令。
+准备 Node.js 22.12 或更新版本、npm 及 Python 3.9 或更新版本。在游戏目录执行以下命令。
 
 ```powershell
 npm.cmd ci

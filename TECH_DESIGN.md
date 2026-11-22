@@ -6,7 +6,7 @@ Phase 2 远征已采用以下分层，Phase 3 在此基础上加入四王国。�
 
 - Windows 桌面现代浏览器、鼠标操作、可缩放窗口。
 - TypeScript + Phaser 3 + Vite + HTML/CSS + 本地 JSON + Vitest。
-- 采用本机 Node.js 20.12，Vite 6 与 Vitest 3 适配该运行时。精确版本见锁文件。
+- 开发与部署使用 Node.js 22.12 或更新版本。Vite、Vitest 和 Wrangler 的精确版本见锁文件。
 - 正常游玩无需在线服务器、CDN、远程素材或字体。静态包通过 HTTP 服务运行，离线包可双击 HTML 启动。
 - 开发、构建、预览、类型检查和测试命令见项目 README。
 

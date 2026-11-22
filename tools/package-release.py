@@ -16,7 +16,7 @@ ROOT_FILES = (
     '.editorconfig', '.gitattributes', '.gitignore', 'AGENTS.md', 'ART_DIRECTION.md',
     'GAME_DESIGN.md', 'README.md', 'ROADMAP.md', 'TASKS.md', 'TECH_DESIGN.md',
     'TEST_PLAN.md', 'THIRD_PARTY_NOTICES.md', 'index.html', 'package-lock.json',
-    'package.json', 'progress.md', 'tsconfig.json', 'vite.config.ts',
+    'package.json', 'progress.md', 'tsconfig.json', 'vite.config.ts', 'wrangler.jsonc',
 )
 SOURCE_DIRS = ('assets', 'docs', 'public', 'src', 'tests', 'tools')
 SOURCE_EXTS = frozenset('.css .html .js .json .md .mjs .mts .ogg .png .py .ts .txt .webp'.split())

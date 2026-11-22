@@ -51,6 +51,8 @@ Phase 0 至 Phase 5 已通过验收。可启动项目、完整战局、测试与
 
 ## 首发前迭代进展
 
+- 2026-11-22，新增 Cloudflare Workers Static Assets 部署配置，使用 `dist/`、锁定的 Wrangler 4.166.0 与 Node.js 22.12 或更新版本。独立 Windows 目录经 npm 官方仓库完成干净安装。117 项测试、`npm run deploy -- --dry-run`、静态和离线包构建均通过，源码包含 Workers 配置。Wrangler 本机预览核对了 16 个静态文件的字节与 MIME 类型、入口 304 和缺失资源 404，Edge 成功进入战斗、暂停并刷新续玩。构建号 `0.1.0+dd0d29052cd7`。实际 Cloudflare 部署待绑定账号。 [部署设置](docs/DEPLOYMENT.md#cloudflare-workers)
+
 - 帧率上限有五档。Edge 实际绘制约 29.9、59.8、120.5、144.1 和 164.9 FPS。30 与 120 档的战局快照在第 24 个固定模拟步相同。各档数据见 [帧率档位实测](docs/PERFORMANCE.md#帧率档位实测)。
 - 新增备战逆序撤销。归还原军令和部署价，校验撤除后的容量，确认已用于升级或科技的部署。新版检查点保留撤销记录，旧版继续加载。规则与 Edge 覆盖连续撤销、保存、旧档、无效重试和仓库两格恢复。[窄屏撤销](docs/screenshots/deployment-undo-narrow.png)
 - 部署预览显示完整占地、产出和法术塔伤害等实际规则变化。Edge 检查了两格粮栈、临水农圃和祭坛旁的法术塔，并通关六波远征。[占地预览](docs/screenshots/deployment-footprint.png)

@@ -102,6 +102,7 @@
 - [x] 修复营地争用合法出阵格，核对分配、军粮顺序、读档和实战出阵。比较两批驻军末波与六种默认策略。[出阵格对照](docs/BALANCE_BASELINE.md#最终波出阵格分配)
 - [x] 对照最终波重甲应对和巨兽入场节奏，用三个种子组及 720 局默认策略验证新间隔。在离线生产包核对巨兽简报、续玩、元帅动作和六波胜利。[入场节奏对照](docs/BALANCE_BASELINE.md#最终波巨兽入场节奏)
 - [x] 托管地址验收脚本检查实际构建字节、MIME、压缩和缓存。支持等待同址更新后验证保留旧资源及战利品续玩。[托管验收命令](docs/DEPLOYMENT.md#托管地址验收)
+- [x] GitHub 源码接入 Cloudflare Workers Static Assets。通过干净安装、Wrangler 部署演练和本机 Edge 运行验证。 [部署设置](docs/DEPLOYMENT.md#cloudflare-workers)
 - [x] 提供整局战报下载，记录每波军粮、损伤、战后布局和战利品选择。验收刷新、旧档迁移和离线导出。[试玩反馈说明](docs/PLAYTEST.md#反馈)
 - [x] 复用敌军未变化的城堡路径，覆盖墙体受损、破障重寻路和逐模拟步一致性，复查 60 FPS 六波远征。[性能对照](docs/PERFORMANCE.md#敌军寻路计算复用)
 - [x] 战斗中区分在场与待入场敌军。按单位身份保持战场检查，核对移动高亮、暂停恢复、键盘焦点和结束后的清理。[实战截图](docs/screenshots/live-battle-intel.png)

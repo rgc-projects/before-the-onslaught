@@ -18,6 +18,8 @@
 
 网页静态包使用 `npm.cmd run build` 生成。发布脚本可检查托管地址的文件与缓存，也可在原地址实际更新后验证旧档续玩。 [静态网页发布说明](docs/DEPLOYMENT.md)
 
+GitHub 仓库可直接连接 Cloudflare Workers Builds。构建命令用 `npm run build`，部署命令用 `npx wrangler deploy`。 [Cloudflare Workers 设置](docs/DEPLOYMENT.md#cloudflare-workers)
+
 网页主菜单可在战场加载期间使用。若提前进入备战，开战按钮会等战场就绪后启用。战场加载失败时，可按备战界面的提示重新加载页面，再从原有检查点继续。
 
 主菜单的「进度备份」可导出当前检查点和远征纪事。换试玩包路径、浏览器或电脑后，打开新版游戏并导入同一个 JSON 文件即可恢复。确认前可比较备份与本机进度。若另一标签页期间有更新，游戏会刷新摘要并等待再次确认。 [迁移步骤](docs/PLAYTEST.md#换设备或试玩包时迁移进度)
@@ -117,7 +119,7 @@ before-the-onslaught/
 
 ## 启动与检查
 
-在项目目录中使用 Node.js 20.12.0 或更高版本。Windows PowerShell 可使用 `npm.cmd` 避开本地的脚本执行策略。
+在项目目录中使用 Node.js 22.12.0 或更高版本。Windows PowerShell 可使用 `npm.cmd` 避开本地的脚本执行策略。
 
 首次安装依赖或锁文件更新后，先关闭正在运行的开发和预览服务，再执行以下命令。
 
